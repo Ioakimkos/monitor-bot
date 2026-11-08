@@ -1,0 +1,4 @@
+monitor-bot
+monitor-bot.new
+*.env
+.DS_Store

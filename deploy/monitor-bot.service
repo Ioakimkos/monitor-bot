@@ -1,0 +1,10 @@
+[Unit]
+Description=Telegram Monitor Bot
+After=network.target
+
+[Service]
+ExecStart=/opt/monitor-bot/monitor-bot
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

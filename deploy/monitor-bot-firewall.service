@@ -1,0 +1,12 @@
+[Unit]
+Description=Restrict monitor-bot port 8080
+After=network-pre.target
+Before=monitor-bot.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/monitor-bot-firewall.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
